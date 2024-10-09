@@ -1,0 +1,2 @@
+This is a project of Budget Management System where users can add, delete and update their transactions in a web based application. These transactions are stored in the MongoDB database. It also displays the balance amount after the transactions which helps us to plan our financial budget and be conscious about our funds.
+It still needs future improvements like users can authenticate with their email ids and enable fund transfers between users.
