@@ -1,0 +1,165 @@
+/* General reset and styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    background-image: url('free-website-background-23.jpg');
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Changed to align content to the top */
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container holding both the form and transaction history */
+.container {
+    width: 90%;
+    max-width: 800px;
+}
+
+/* Form styles */
+form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+h1 {
+    text-align: center;
+    color: #5cb85c;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.input-section label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.input-section input,
+.input-section select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#add_btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+#add_btn:hover {
+    background-color: #4cae4c;
+}
+
+/* Expenses and Incomes List */
+.expenses-list {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.expenses-list h2 {
+    margin-bottom: 1rem;
+    color: #333;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1rem;
+    color: #333;
+}
+
+thead th {
+    background-color: #5cb85c;
+    color: white;
+    text-align: center;
+}
+
+tfoot td {
+    font-weight: bold;
+    text-align: right;
+    padding: 12px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+tfoot td:first-child {
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f4f7f6;
+}
+
+tbody tr:hover {
+    background-color: #e9f5f0;
+}
+
+button.delete-btn {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.delete-btn:hover {
+    background-color: #c9302c;
+}
+
+#total-amount {
+    text-align: right;
+    font-weight: bold;
+    color: #5cb85c;
+    font-size: 1.2rem;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+    table th, table td {
+        padding: 10px;
+    }
+
+    #add_btn {
+        font-size: 1rem;
+    }
+}
