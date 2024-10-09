@@ -1,4 +1,3 @@
-/* General reset and styles */
 * {
     margin: 0;
     padding: 0;
@@ -17,13 +16,11 @@ body {
     padding: 20px;
 }
 
-/* Container holding both the form and transaction history */
 .container {
     width: 90%;
     max-width: 800px;
 }
 
-/* Form styles */
 form {
     background-color: white;
     padding: 2rem;
@@ -73,7 +70,6 @@ h1 {
     background-color: #4cae4c;
 }
 
-/* Expenses and Incomes List */
 .expenses-list {
     background-color: white;
     padding: 2rem;
@@ -149,7 +145,6 @@ button.delete-btn:hover {
     font-size: 1.2rem;
 }
 
-/* Media Query for responsiveness */
 @media (max-width: 768px) {
     .container {
         padding: 1.5rem;
